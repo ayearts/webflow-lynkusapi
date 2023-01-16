@@ -228,11 +228,11 @@ const updateItem = async () => {
 
   let idToSlug = {};
   let idToCid = {};
-  allWebflowJobs.items.map((eachJob) => {
+  allWebflowJobs.map((eachJob) => {
     idToSlug[eachJob.jobid] = eachJob.slug;
     idToCid[eachJob.jobid] = eachJob._id;
   });
-  let allWebflowJobHashes = allWebflowJobs.items
+  let allWebflowJobHashes = allWebflowJobs
     .map((eachJob) => eachJob.jobhash)
     .filter((item) => item);
 
