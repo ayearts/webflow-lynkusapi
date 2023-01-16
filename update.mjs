@@ -217,13 +217,11 @@ const getWebflowJobs = async () => {
     collectionId: currentOffersCollectionId,
   });
   const allJobIds = response;
-  console.log(allJobIds, "ALL");
   return allJobIds;
 };
 
 const updateItem = async () => {
   const allWebflowJobs = await getWebflowJobs();
-  console.log(allWebflowJobs);
   const data = await getJobsWithHashes();
 
   let idToSlug = {};
