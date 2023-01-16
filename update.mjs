@@ -1,6 +1,7 @@
 import { MerkleJson } from "merkle-json";
 import fetch from "node-fetch";
 import Webflow from "webflow-api";
+import { CronJob } from "cron";
 
 const MJ = new MerkleJson();
 function containsAnyLetter(str) {
