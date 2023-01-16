@@ -222,7 +222,6 @@ const getWebflowJobs = async () => {
 
 const updateItem = async () => {
   const allWebflowJobs = await getWebflowJobs();
-  console.log(allWebflowJobs);
   const data = await getJobsWithHashes();
 
   let idToSlug = {};
